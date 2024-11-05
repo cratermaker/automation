@@ -8,9 +8,9 @@ echo Performing Database Backup...
 echo Wait for a moment while the backup is in progress...
 
 :: Run the mysqldump commands
-"X:\www\mysql\bin\mysqldump" -u root ip > C:\dbname%backupdate%.sql
-"X:\www\mysql\bin\mysqldump" -u root ip > D:\dbname%backupdate%.sql
-echo Done backing up IP Threat database!
+"X:\www\mysql\bin\mysqldump" -u root ip > C:\<dbname>%backupdate%.sql
+"X:\www\mysql\bin\mysqldump" -u root ip > D:\<dbname>%backupdate%.sql
+echo Done backing up database!
 
 :: Exit the script
 exit /b
